@@ -1,0 +1,11 @@
+public class Main{
+    static void sum1(int a,int b)
+    {
+        int z=a+b;
+        System.out.println(z);
+    }
+    public static void main(String[] args)
+    {
+        sum1(19,2454);
+    }
+}
