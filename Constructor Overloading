@@ -1,0 +1,26 @@
+package lab3;
+
+public class method {
+	int num1,num2;
+	
+	method()
+	{
+		System.out.println("KIET GROUPS OF INSTITUTIONS");
+	}
+	method(int x,int y)
+	{
+	this.num1 =x;
+	this.num2 =y;
+	}
+int	getsum()
+	{
+		return num1 +num2;
+	}
+
+	public static void main(String[] args)
+	{
+		method M1 = new method(23,89);
+		System.out.println("sum = "+M1.getsum());
+	}
+
+}
