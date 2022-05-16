@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+class Cyllinder {
+    private int height, width;
+                                                        //Getter and Setter are used to assign the values to the private variables,
+                                                        they can't be assigned values directly
+    public int getheight() {
+        return height;
+    }
+
+    public void setheight(int n) {
+        height = n;
+    }
+
+    public int getwidth() {
+        return width;
+    }
+
+    public void setwidth(int m) {
+        width = m;
+    }
+
+    public void volume() {
+        float pi = 3.14f;
+        System.out.print("Volume of the Given Cylinder is : ");
+        float vol = pi * width * width * height;
+        System.out.println(vol);
+
+    }
+}
+
+public class getter_setter {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Cyllinder c1 = new Cyllinder();
+        System.out.println("Enter the height of the Cyllinder: ");
+        int m = sc.nextInt();
+        c1.setheight(m);
+        System.out.println("Enter the width of the Cyllinder: ");
+        int n = sc.nextInt();
+        c1.setwidth(n);
+        System.out.println("Height = " + c1.getheight() + " " + "Width = " + c1.getwidth());
+        c1.volume();
+
+    }
+}
