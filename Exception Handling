@@ -1,0 +1,30 @@
+import java.util.*;
+public class exception {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int marks[]=new int[3];
+		marks[0]=34;
+		marks[1]=12;
+		marks[2]=65;
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int m=sc.nextInt();
+		try {
+			System.out.println("Data at index number is: "+marks[n]);
+			System.out.println("Divide ="+marks[n]/m);
+			
+		}
+		catch(ArrayIndexOutOfBoundsException e ){
+		System.out.println("Exception "+e);
+		}
+		catch(Exception e) {
+		System.out.println("End of the program: "+e.getMessage());
+		
+
+	}
+		System.out.println("ice cream");
+	}
+}
+
+
