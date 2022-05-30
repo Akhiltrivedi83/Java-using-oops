@@ -1,0 +1,38 @@
+//Multithreading is the java feature which allows the concurrent execution of java program so that therer is the maximum utilization of CPU.
+//It can be aachieve uysing two method:  1-By extending Thread class 
+//                                       2-By Implementing the Runnable interface.
+
+
+//This is the example of Extending the thread class : 
+
+import java.lang.*;
+
+class myThread1 extends Thread {
+    public void run() {
+        int n = 10;
+        while (n < 20) {
+            System.out.println("This is Thread 1 class");
+            n++;
+        }
+    }
+}
+
+class myThread2 extends Thread {
+    public void run() {
+        int n = 10;
+        while (n < 20) {
+            System.out.println("This is thread 2 class");
+            n++;
+        }
+    }
+}
+
+public class Multithreading {
+    public static void main(String[] args) {
+
+        myThread1 t1 = new myThread1();
+        myThread2 t2 = new myThread2();
+        t1.start();
+        t2.start();
+    }
+}
