@@ -1,4 +1,5 @@
-//Multithreading is the java feature which allows the concurrent execution of java program so that therer is the maximum utilization of CPU.
+//Multithreading is the java feature which allows the concurrent execution(Ability to run several apllication or programs in parallel) 
+//of java program so that there is the maximum utilization of CPU.
 //It can be aachieve uysing two method:  1-By extending Thread class 
 //                                       2-By Implementing the Runnable interface.
 
