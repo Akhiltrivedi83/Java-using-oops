@@ -37,3 +37,37 @@ public class Multithreading {
         t2.start();
     }
 }
+
+
+
+
+//By using the Runnable Interface
+
+
+import java.util.*;
+import java.lang.*;
+
+class myThread1 implements Runnable {
+    public void run() {
+        System.out.println("This is the Thread 1 class");
+    }
+}
+
+class myThread2 implements Runnable {
+    public void run() {
+        System.out.println("This is the Thread 2 class");
+    }
+}
+
+public class New {
+    public static void main(String[] args) {
+        myThread1 m1 = new myThread1();
+        myThread2 m2 = new myThread2();
+        Thread g1 = new Thread(m1);
+        Thread g2 = new Thread(m2);
+        g1.start();
+        g2.start();
+    }
+
+}
+
