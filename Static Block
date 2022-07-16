@@ -1,0 +1,47 @@
+import java.util.*;
+
+class A{
+    int x,y;
+    static {
+    System.out.println("Base Class Static Method");
+}
+    A()
+    {
+        System.out.println("Base class Constructor");
+    }
+    A(int x,int y)
+    {
+        this.x=x;
+        this.y=y;
+    }
+    void sum()
+    {
+    System.out.println("Sum "+(x+y));
+    }
+}
+class B extends A{
+    static
+{
+    System.out.println("Derived Class Static block");
+}
+    B()
+    {
+        System.out.println("Derived Class Constructor");
+    }
+    
+}
+public class Main
+{
+
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int x=sc.nextInt();
+	    int y=sc.nextInt();
+	    A a1=new A(x,y);
+	    a1.sum();
+	    
+	    B b1=new B();
+		System.out.println("Main Class");
+	}
+}
+
